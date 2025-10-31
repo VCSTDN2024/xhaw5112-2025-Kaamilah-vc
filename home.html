@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" type = "image/png" ref="Assets/NKK LOGO DESIGN.jpg">
+        <title>Home Page | Empowering the nation</title>
+        <!--Like stylesheets-->
+        <!--Homestyle-->
+        <link rel="stylesheet" href="css/homecss.css">
+        <!--Header-->
+        <link rel="stylesheet" href="css/header.css">
+        <!--Footer-->
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            
+        <script>
+
+            $(function() {
+
+                $(".toggle").on("click", function(){
+
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }
+                    else{
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+
+        </script>
+    
+    </head>
+
+    <!--Body-->
+
+    <body>
+
+        <!--Header section-->
+        <header>
+            <a href="home.html"><img class="logoimg" src="Assets/NKK LOGO DESIGN.jpg" alt="logoimg"></a>
+            <ul class="userheader">
+            <li class="Logo"><a class="a-headerlogo" href="home.html">Empowering The Nation</a></li>
+            </ul>
+            <!--Add nav bar for each page. 
+                - Home Page
+                - Course Page
+                - Enquiry Page  -->
+        </header>
+        <hr class="custom-hr">
+
+        <!--Hero section-->
+        <!--Display 4 pictures that move, an 'Enquire now button' and a button to go through each picture, pictures move automatically-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="image-container">
+                <img src="Assets/gardening.jpg" alt="horizontal image" class="full-width-image">       <!--Singular image-->
+
+                <!--Input 3 more pics that move automatically-->
+
+                <div class="overlay">
+                    <h2><a href="coursesinfo.html">View Course Info</a></h2>     <!--Input Enquire page when finished-->
+                </div>
+            </div>
+     <!--Fix later. not efficient and simple-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--Diplay Section-->
+
+        <div class="display-section">
+            <div class="card-container">
+                <div class="card">
+                    <a href=""><img src="test/6 month.jpg" alt="img 1"></a>     <!--Input 6 month course page when done-->
+                        <div class="intro">
+                            <h1>6 month courses</h1>
+                            <p>View <span><a href="coursesinfo.html"> 6 month courses</a></span> here</p>   <!--Input 6 month course page when done-->
+                        </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="test/6-weekNew.png" alt="img 1"></a>     <!--Input 6 week course page when done-->
+                        <div class="intro">
+                            <h1>6 week courses</h1>
+                            <p>View <span><a href="coursesinfo.html"> 6 week courses</a></span> here</p>   <!--Input 6 week course page when done-->
+                        </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="test/pricing.jpg" alt="img 1"></a>     <!--Input 6 month course page when done-->
+                        <div class="intro">
+                            <h1>Pricing</h1>
+                            <p>View <span><a href="#prices"> Pricing</a></span> here</p>   <!--Imbed to take the user down the page to the pricing section at the bottom of this page-->
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!--Video sections-->
+
+
+        <!--Pricing section-->
+
+        <div class="price-section" id="prices">
+            <div class="price-container">
+                <h1 class="priceheading">Prices and discounts</h1>
+                <ul class="prices">
+                    <li>2 courses - 5% Discount</li>
+                    <br>
+                    <li>3 courses - 10% Discount</li>
+                    <br>
+                    <li>4 + courses - 15% Discount</li>
+                </ul>
+            </div>
+                <div class="overlayprice">
+                    <h2><a href="enquiries.html">Enquire</a></h2>     <!--Do Styling for button-->
+                </div>
+        </div>
+
+        <br>
+
+        <!--Footer Section-->
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul> 
+                        <li><a href="tel:+0720664782">Call now [072 066 4782]</a></li> <!--Turn to contact number-->
+                        <li><a href="empoweringthenation0">EmpoweringTheNation@gmail.com</a></li>
+                        <p class="copyright">&copy; copyright reserved</p>
+                    </ul> 
+  
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Sandton+City+Office+Towers/@-26.1079468,28.0537605,17z/data=!4m14!1m7!3m6!1s0x1e957334662cb431:0x484917656444f4d5!2sSandton+City+Office+Towers!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570!3m5!1s0x1e957334662cb431:0x484917656444f4d5!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">Sandton</a></li> 
+                        <li><a href="https://www.google.com/maps/place/Corporate+Park/@-26.1745709,28.1342729,17z/data=!4m6!3m5!1s0x1e95133d435d2801:0x183d2a8078fda622!8m2!3d-26.17533!4d28.13389!16s%2Fg%2F11qq2dznm0?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">BedFordView</a></li> 
+                        <li><a href="https://www.google.com/maps/place/Rosebank+Towers/@-26.1431344,28.0421749,17z/data=!4m14!1m7!3m6!1s0x1e950ced34857c5b:0x663d466a6fc48b83!2sRosebank+Towers!8m2!3d-26.1431344!4d28.0421749!16s%2Fg%2F11b8v6lk6d!3m5!1s0x1e950ced34857c5b:0x663d466a6fc48b83!8m2!3d-26.1431344!4d28.0421749!16s%2Fg%2F11b8v6lk6d?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">RoseBank</a></li> 
+                    </ul>
+                </div>
+  
+  
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/empowering_the_nation__/?igsh=cjI2cTdtNGFtNnZ4&utm_source=qr" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Empowering-the-Nation/61579850893491/?mibextid=wwXIfr&rdid=SffEcW6kivWJSzoA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BFicVpBtP%2F%3Fmibextid%3DwwXIfr" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@empoweringthenation-k2q" target="blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/empowering11276?s=21" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@empowering.the.na4?_t=ZS-90k6R4PiuNo&_r=1" target="blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    </body>
+</html>

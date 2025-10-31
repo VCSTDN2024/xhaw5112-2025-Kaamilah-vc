@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" type = "image/png" ref="Assets/NKK LOGO DESIGN.jpg">
+        <title>Home Page | Empowering the nation</title>
+        <!--Like stylesheets-->
+        <!--Homestyle-->
+        <link rel="stylesheet" href="css/course.css">
+        <!--Header-->
+        <link rel="stylesheet" href="css/header.css">
+        <!--Footer-->
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+
+            $(function() {
+
+                $(".toggle").on("click", function(){
+
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }
+                    else{
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+
+        </script>
+    
+    </head>
+
+    <!--Body-->
+
+    <body>
+
+        <!--Header section-->
+        <header>
+            <a href="home.html"><img class="logoimg" src="Assets/NKK LOGO DESIGN.jpg" alt="logoimg"></a>
+            <ul class="userheader">
+            <li class="Logo"><a class="a-headerlogo" href="home.html">Empowering The Nation</a></li>
+            </ul>
+        </header>
+        <hr class="custom-hr">
+
+        <!--Tabs section-->
+
+          <!-- Header is already done, so starting from main content -->
+  <main class="courses-container">
+    <!-- Sidebar with course list -->
+    <aside class="sidebar">
+      <h3>Courses</h3>
+      <div class="category">Six - month courses</div>
+      <ul>
+        <li><a href="#" onclick="showCourse('sewing')">Sewing</a></li>
+        <li><a href="#" onclick="showCourse('firstaid')">First aid</a></li>
+        <li><a href="#" onclick="showCourse('landscaping')">Landscaping</a></li>
+        <li><a href="#" onclick="showCourse('lifeskills')">Life skills</a></li>
+      </ul>
+
+      <div class="category">Six - week courses</div>
+      <ul>
+        <li><a href="#" onclick="showCourse('childminding')">Child minding</a></li>
+        <li><a href="#" onclick="showCourse('cooking')">Cooking</a></li>
+        <li><a href="#" onclick="showCourse('garden')">Garden maintenance</a></li>
+      </ul>
+    </aside>
+
+    <!-- Course info area -->
+    <section class="course-info">
+
+      <!-- SEWING (default visible) -->
+      <div id="sewing" class="course-detail active">
+        <img src="test/sewing.jpg" alt="Sewing">
+        <h2>Sewing</h2>
+        <p><strong>Fees:</strong> R1 500</p>
+        <p><strong>Purpose:</strong> To provide alterations and new garment tailoring services.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Types of stitches</li>
+          <li>Threading a sewing machine</li>
+          <li>Sewing buttons, zips, hems and seams</li>
+          <li>Alterations</li>
+          <li>Designing and sewing new garments</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- FIRST AID -->
+      <div id="firstaid" class="course-detail">
+        <img src="test/first aid.jpg" alt="First Aid">
+        <h2>First Aid</h2>
+        <p><strong>Fees:</strong> R1 500</p>
+        <p><strong>Purpose:</strong> To provide first aid awareness and basic life support.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Wounds and bleeding</li>
+          <li>Burns and fractures</li>
+          <li>Emergency scene management</li>
+          <li>Cardio-Pulmonary Resuscitation</li>
+          <li>Respiratory distress e.g. Choking, blocked airway</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- LANDSCAPING -->
+      <div id="landscaping" class="course-detail">
+        <img src="test/landscaping.jpg" alt="Landscaping">
+        <h2>Landscaping</h2>
+        <p><strong>Fees:</strong> R1 500</p>
+        <p><strong>Purpose:</strong> To provide landscaping services for new and established gardens.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Indigenous and exotic plants and trees</li>
+          <li>Fixed structures (fountains, statues, benches, tables, built-on braai)</li>
+          <li>Balancing of plants and trees in a garden</li>
+          <li>Aesthetics of plant shapes and colours</li>
+          <li>Garden layout</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- LIFE SKILLS -->
+      <div id="lifeskills" class="course-detail">
+        <img src="test/life skills.jpg" alt="Life Skills">
+        <h2>Life Skills</h2>
+        <p><strong>Fees:</strong> R1 500</p>
+        <p><strong>Purpose:</strong> To provide skills to navigate basic life necessities.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Opening a bank account</li>
+          <li>Basic labour law (know your rights)</li>
+          <li>Basic reading and writing literacy</li>
+          <li>Basic numeric literacy</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- CHILD MIDNING -->
+      <div id="childminding" class="course-detail">
+        <img src="test/child.jpg" alt="Child minding">
+        <h2>Child Minding</h2>
+        <p><strong>Fees:</strong> R750</p>
+        <p><strong>Purpose:</strong> To provide basic child and baby care.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Birth to six-month old baby needs</li>
+          <li>Seven-month to one year old needs</li>
+          <li>Toddler needs</li>
+          <li>Educational Toys</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- COOKING -->
+      <div id="cooking" class="course-detail">
+        <img src="test/cooking.jpg" alt="Cooking">
+        <h2>Cooking</h2>
+        <p><strong>Fees:</strong> R750</p>
+        <p><strong>Purpose:</strong> To prepare and cook nutritious family meals.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Nutritional requirements for a healthy body</li>
+          <li>Types of protein, carbohydrates and vegetables</li>
+          <li>Planning meals</li>
+          <li>Tasty and nutritious recipes</li>
+          <li>Preparation and cooking of meals</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+      <!-- GARDENING -->
+      <div id="garden" class="course-detail">
+        <img src="test/Gardening.jpg" alt="Garden maintenance">
+        <h2>Garden Maintenance</h2>
+        <p><strong>Fees:</strong> R750</p>
+        <p><strong>Purpose:</strong> To provide basic knowledge of watering, pruning and planting in a domestic garden.</p>
+        <h3>Course Content:</h3>
+        <ul>
+          <li>Water restrictions and the watering requirements of indigenous and exotic plants</li>
+          <li>Pruning and propagation of plants</li>
+          <li>Planting techniques for different plant types</li>
+        </ul>
+        <button><a href="enquiries.html">Enquire about pricing</a></button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer is already done -->
+
+  <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul> 
+                        <li><a href="tel:+0720664782">Call now [072 066 4782]</a></li> <!--Turn to contact number-->
+                        <li><a href="empoweringthenation0">EmpoweringTheNation@gmail.com</a></li>
+                        <p class="copyright">&copy; copyright reserved</p>
+                    </ul>
+                </div>
+  
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Sandton+City+Office+Towers/@-26.1079468,28.0537605,17z/data=!4m14!1m7!3m6!1s0x1e957334662cb431:0x484917656444f4d5!2sSandton+City+Office+Towers!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570!3m5!1s0x1e957334662cb431:0x484917656444f4d5!8m2!3d-26.1079468!4d28.0537605!16s%2Fg%2F11nx0lq570?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">Sandton</a></li> 
+                        <li><a href="https://www.google.com/maps/place/Corporate+Park/@-26.1745709,28.1342729,17z/data=!4m6!3m5!1s0x1e95133d435d2801:0x183d2a8078fda622!8m2!3d-26.17533!4d28.13389!16s%2Fg%2F11qq2dznm0?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">BedFordView</a></li> 
+                        <li><a href="https://www.google.com/maps/place/Rosebank+Towers/@-26.1431344,28.0421749,17z/data=!4m14!1m7!3m6!1s0x1e950ced34857c5b:0x663d466a6fc48b83!2sRosebank+Towers!8m2!3d-26.1431344!4d28.0421749!16s%2Fg%2F11b8v6lk6d!3m5!1s0x1e950ced34857c5b:0x663d466a6fc48b83!8m2!3d-26.1431344!4d28.0421749!16s%2Fg%2F11b8v6lk6d?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="blank">RoseBank</a></li> 
+                    </ul>
+                </div>
+  
+  
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/empowering_the_nation__/?igsh=cjI2cTdtNGFtNnZ4&utm_source=qr" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Empowering-the-Nation/61579850893491/?mibextid=wwXIfr&rdid=SffEcW6kivWJSzoA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BFicVpBtP%2F%3Fmibextid%3DwwXIfr" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@empoweringthenation-k2q" target="blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/empowering11276?s=21" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@empowering.the.na4?_t=ZS-90k6R4PiuNo&_r=1" target="blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </footer>
+    
+  <script>
+    function showCourse(courseId) {
+      // hide all course details
+      document.querySelectorAll('.course-detail').forEach(function(div) {
+        div.classList.remove('active');
+      });
+      // show only the one clicked
+      document.getElementById(courseId).classList.add('active');
+    }
+  </script>
+
+
+
+        </body>
+        </html>

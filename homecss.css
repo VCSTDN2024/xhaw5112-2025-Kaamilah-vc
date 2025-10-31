@@ -1,0 +1,206 @@
+/*Hero section*/
+
+.image-container{
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 20px black;
+  }
+
+  /*Overlay hero*/
+    .overlay{
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    transform: translate(-50, -50);
+    background-color: #E8D09B;
+    height: 50px;
+    width: 280px;
+    padding: 8px ;
+    box-shadow: 5px 5px 20px black;
+  }
+  
+  .overlay:hover {
+    transform: scale(1.1);  /*Scale up image on hover, Also change this in future. maybe add img */
+    background-color: #38482A;
+  }
+  
+  .overlay h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .overlay h2 a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    }
+  
+  .overlay h2 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+    color: white;
+  }
+
+  /*Overlay price*/
+  .overlayprice{
+    position: absolute;
+    top: 290%;
+    left: 45%;
+    transform: translate(-50, -50);
+    background-color: #225a2c;
+    height: 50px;
+    width: 200px;
+    padding: 8px;
+    box-shadow: 5px 5px 20px black;
+  }
+
+    .overlayprice:hover {
+    transform: scale(1.1);  /*Scale up image on hover, Also change this in future. maybe add img */
+    background-color: #4b8d11;
+  }
+  
+  .overlayprice h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .overlayprice h2 a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .overlayprice h2 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+    color: white;
+  }
+  
+  .full-width-image{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+  }
+  
+  
+  
+  /*Overlays*/
+  
+  .display-section {
+    background-color: #B9B19F;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 10px 100px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
+    align-items: center;
+    box-shadow: 5px 5px 30px black;
+  }
+  
+  .card-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
+  .card {
+    height: 500px;
+    width: 340px;
+    margin: 80px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 350px;
+    height: 500px;
+  }
+
+  
+  .card:hover {
+    transform: scale(1.1); /* Scale up image on hover, Also change this in future. maybe add img */
+  }
+  
+  .intro{
+    height: 73px;
+    width: 350px;
+    padding: 2px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 77px;
+    background: #CABE8B;
+    color: rgb(255, 255, 255);
+    transition: .6s;
+  }
+  
+  h1{
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+  }
+  
+  
+  p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  span{
+    font-weight: bold;
+  }
+  
+  .card:hover .intro{
+    height: 220px;
+    bottom: 220px;
+    background: #38482A;
+    color: white;
+  }
+  
+  .card:hover p{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+  }
+  
+  .card:hover p a {
+    text-decoration: underline;
+    color:#B5F6A8;
+  }
+
+
+  /*Price section*/
+
+   .price-section {
+    background-color: #7A8775 ;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 90px 90px; /* Adjust padding as needed */
+    display: flex;
+    height: 90vh;
+  }
+
+  .priceheading{
+    font-size: 50px;
+    text-decoration: underline;
+  }
+
+  .prices{
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    padding-left: 150px;
+  }
